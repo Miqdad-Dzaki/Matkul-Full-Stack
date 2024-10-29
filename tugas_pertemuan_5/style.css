@@ -31,6 +31,7 @@ nav {
   top: 0;
   width: 60px; /* Lebar sidebar collapsed */
   height: 100%;
+  padding-top: 30px;
   background-color: #fff;
   transition: width 0.3s ease; /* Animasi untuk melebar */
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
@@ -394,5 +395,3 @@ canvas {
         height: 200px;  
     }  
 }
-
-
