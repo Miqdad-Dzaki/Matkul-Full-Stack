@@ -1,0 +1,403 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F7FB;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #0b0c0e;
+    color: white;
+    padding: 30px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header h2 {
+    font-size: 26px;
+    color: white;
+}
+
+.menu-header {
+    margin-top: 50px;
+}
+
+.menu-header h5 {
+    font-size: large;
+    color: #ffffff;
+}
+
+
+.menu-header  li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.menu-header li a {
+    color: #aab8c8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.menu-header li a i {
+    margin-right: 10px;
+}
+
+.menu-header li a:hover {
+    color: #5500ff; 
+}
+
+.business-header {
+    margin-top: 30px;
+}
+
+.business-header h5 {
+    font-size: large;
+    color: #ffffff;
+}
+
+.business-header  li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.business-header li a {
+    color: #aab8c8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.business-header li a i {
+    margin-right: 10px;
+}
+
+.business-header li a:hover {
+    color: #5500ff; 
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: 5px;
+    font-size: 10px;
+    text-align: left;
+    color: #AAB8C8;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px 40px;
+    background-color: #f1f1f1;
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    width: 700px; 
+  }
+  
+  .search-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 8px;
+    padding-left: 20px;
+    flex-grow: 1;
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-bar button .fa-search {
+    color: #999999;
+    font-size: 18px;
+    padding-right: 20px;
+  }
+
+.overview-section h5 {
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.percentage {
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.amount {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.label {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Positive and Negative Percentage Colors */
+.percentage.positive {
+    color: #28a745;
+}
+
+.percentage.negative {
+    color: #dc3545; 
+}
+
+/* Individual icon colors for each card */
+.card:nth-child(1) .icon {
+    color: #f5a623; 
+}
+
+.card:nth-child(2) .icon {
+    color: #a569bd; 
+}
+
+.card:nth-child(3) .icon {
+    color: #17a2b8; 
+}
+
+.card:nth-child(4) .icon {
+    color: #e74c3c; 
+}
+
+.products-section h5, .chart-section h5 {
+    margin-top: 15px;
+    margin-bottom: 10;
+}
+
+.table {
+    background-color: #999;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.table thead th {
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+.table tbody td {
+    font-size: 12px;
+}
+
+.table tbody td img {
+    width: 25px;
+    height: auto;
+}
+
+
+/* Right Sidebar */
+.right-sidebar {
+    width: 350px;
+    background-color: #f1f1f1;
+    padding: 30px;
+    box-shadow: 0 0px 2px rgb(0, 0, 0);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.icon-circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.icon-bell, .icon-pencil {
+    font-size: 24px;
+    color: #000000;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-logo {
+    margin-bottom: 20px;
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.user-info h3 {
+    margin-top: 10px;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.stat-item strong {
+    font-size: 18px;
+    color: #3e468d;
+}
+
+.reputation {
+    margin-bottom: 30px;
+}
+
+.reputation h5 {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.reputation-bar {
+    padding-top: 10px;
+    position: relative;
+}
+
+.progress {
+    background-color: #e3e3e3;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: #4a5bf6;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.reputation span {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    color: #3e468d;
+}
+
+.recent-orders {
+    margin-top: 20px;
+}
+
+.recent-orders h5 {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    a {color: #999;}
+}
+
+.recent-orders ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-orders ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.order-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.order-amount strong {
+    color: #28a745;
+    font-size: 12px;
+}
+
+.order-amount span {
+    display: block;
+    font-size: 8px;
+    color: #6b6b6b;
+}
